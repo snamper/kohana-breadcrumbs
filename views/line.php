@@ -2,7 +2,7 @@
 <?php if($breadcrumbs->count()):?>
 <?php $i = 0; foreach($breadcrumbs as $breadcrumb):?>
 <?php if($set_urls && ! empty($breadcrumb->url)):?>
-<a href="<?=$breadcrumb->url?>"><?endif?>
+<a href="<?php echo $breadcrumb->url; ?>"><?endif?>
 <?=$breadcrumb->name?>
 <?php if($set_urls && ! empty($breadcrumb->url)):?>
 </a>
